@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvansBuilders | Build with Confidence</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons for Menu Toggle -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Brand Colors */
+        :root {
+            --terracotta-orange: #E07A5F; /* A nice, earthy terracotta */
+            --dark-charcoal: #3D405B; /* A deep, professional charcoal blue */
+            --off-white: #F4F1DE; /* A warm, inviting off-white */
+        }
+        .bg-terracotta { background-color: var(--terracotta-orange); }
+        .text-terracotta { color: var(--terracotta-orange); }
+        .border-terracotta { border-color: var(--terracotta-orange); }
+        .bg-charcoal { background-color: var(--dark-charcoal); }
+        .text-charcoal { color: var(--dark-charcoal); }
+        .bg-off-white { background-color: var(--off-white); }
+        .text-off-white { color: var(--off-white); }
+
+        /* Smooth scroll for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-white text-charcoal">
+
+    <!-- =========== HEADER =========== -->
+    <header id="header" class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- LOGO PLACEHOLDER -->
+            <a href="#home">
+                <!-- REPLACE THIS SRC: Replace the placeholder URL with your actual logo image file -->
+                <img src="images/logo-1.png" alt="EvansBuilders Logo" class="h-12">
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#home" class="text-charcoal hover:text-terracotta transition duration-300">Home</a>
+                <a href="#services" class="text-charcoal hover:text-terracotta transition duration-300">Services</a>
+                <a href="#about" class="text-charcoal hover:text-terracotta transition duration-300">About Us</a>
+                <a href="#contact" class="text-charcoal hover:text-terracotta transition duration-300">Contact</a>
+                <a href="#contact" class="bg-terracotta text-white font-semibold px-5 py-2 rounded-lg hover:opacity-90 transition duration-300 shadow-lg">
+                    Get a Free Quote
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-charcoal focus:outline-none">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#home" class="block py-2 px-6 text-sm hover:bg-gray-200">Home</a>
+            <a href="#services" class="block py-2 px-6 text-sm hover:bg-gray-200">Services</a>
+            <a href="#about" class="block py-2 px-6 text-sm hover:bg-gray-200">About Us</a>
+            <a href="#contact" class="block py-2 px-6 text-sm hover:bg-gray-200">Contact</a>
+             <a href="#contact" class="block text-center bg-terracotta text-white font-semibold my-2 mx-6 px-5 py-2 rounded-lg hover:opacity-90 transition duration-300 shadow-lg">
+                Get a Free Quote
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- =========== HOME PAGE SECTIONS =========== -->
+        <div id="home">
+            <!-- Hero Section -->
+            <section class="relative h-[80vh] min-h-[500px] text-white flex items-center">
+                <!-- IMAGE PLACEHOLDER: Replace with a professional construction site image. -->
+                <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url(images/hero-1.png);">
+                    <div class="absolute inset-0 bg-black opacity-50"></div>
+                </div>
+                <div class="container mx-auto px-6 relative text-center">
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down">Build with Confidence.<br>Designed to Last.</h1>
+                    <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Expert construction solutions for homes and businesses across Cape Town.</p>
+                    <a href="#services" class="bg-terracotta text-white font-bold py-3 px-8 rounded-lg text-lg hover:opacity-90 transition duration-300 shadow-xl transform hover:scale-105">
+                        Explore Our Services
+                    </a>
+                </div>
+            </section>
+
+            <!-- Icons Section -->
+            <section class="py-16 bg-off-white">
+                <div class="container mx-auto px-6 text-center">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                        <div class="p-4 transform hover:-translate-y-2 transition-transform duration-300">
+                             <div class="bg-terracotta text-white rounded-full p-4 inline-block mb-4"><i data-feather="home" class="w-8 h-8"></i></div>
+                            <h3 class="text-xl font-bold text-charcoal">Residential Projects</h3>
+                        </div>
+                        <div class="p-4 transform hover:-translate-y-2 transition-transform duration-300">
+                             <div class="bg-terracotta text-white rounded-full p-4 inline-block mb-4"><i data-feather="briefcase" class="w-8 h-8"></i></div>
+                            <h3 class="text-xl font-bold text-charcoal">Commercial Projects</h3>
+                        </div>
+                        <div class="p-4 transform hover:-translate-y-2 transition-transform duration-300">
+                            <div class="bg-terracotta text-white rounded-full p-4 inline-block mb-4"><i data-feather="edit" class="w-8 h-8"></i></div>
+                            <h3 class="text-xl font-bold text-charcoal">Renovations & Repairs</h3>
+                        </div>
+                        <div class="p-4 transform hover:-translate-y-2 transition-transform duration-300">
+                            <div class="bg-terracotta text-white rounded-full p-4 inline-block mb-4"><i data-feather="check-square" class="w-8 h-8"></i></div>
+                            <h3 class="text-xl font-bold text-charcoal">Brickwork & Painting</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- About Preview Section -->
+            <section class="py-20 bg-white">
+                <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                    <div class="wow-fade-in-left">
+                        <!-- IMAGE PLACEHOLDER: Replace with a photo of your team at work. -->
+                        <img src="images/1.png" alt="Team working on a construction site" class="rounded-lg shadow-2xl w-full h-auto object-cover">
+                    </div>
+                    <div class="wow-fade-in-right">
+                        <h2 class="text-3xl font-bold text-charcoal mb-4">We don't just build — we craft spaces that matter.</h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            Based in Cape Town, we specialize in delivering expert construction and repair services that meet modern standards. From new builds to complex renovations, our work speaks of quality, safety, and attention to detail.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Us Section -->
+            <section class="py-20 bg-off-white">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-3xl font-bold text-charcoal mb-12">Why Choose Us?</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-white p-4 rounded-full shadow-lg mb-3"><i data-feather="award" class="w-8 h-8 text-terracotta"></i></div>
+                            <h3 class="font-semibold text-lg">Expert Craftsmanship</h3>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-white p-4 rounded-full shadow-lg mb-3"><i data-feather="git-pull-request" class="w-8 h-8 text-terracotta"></i></div>
+                            <h3 class="font-semibold text-lg">Transparent Process</h3>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-white p-4 rounded-full shadow-lg mb-3"><i data-feather="clock" class="w-8 h-8 text-terracotta"></i></div>
+                            <h3 class="font-semibold text-lg">Timely Delivery</h3>
+                        </div>
+                         <div class="flex flex-col items-center">
+                            <div class="bg-white p-4 rounded-full shadow-lg mb-3"><i data-feather="shield" class="w-8 h-8 text-terracotta"></i></div>
+                            <h3 class="font-semibold text-lg">High Safety Standards</h3>
+                        </div>
+                         <div class="flex flex-col items-center">
+                            <div class="bg-white p-4 rounded-full shadow-lg mb-3"><i data-feather="dollar-sign" class="w-8 h-8 text-terracotta"></i></div>
+                            <h3 class="font-semibold text-lg">Affordable Quotes</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent Projects Preview -->
+            <section class="py-20 bg-white">
+                <div class="container mx-auto px-6">
+                    <h2 class="text-3xl font-bold text-center text-charcoal mb-12">Recent Projects</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-white rounded-lg shadow-xl overflow-hidden group">
+                            <!-- IMAGE PLACEHOLDER: Replace with a project image. -->
+                            <img src="images/2.png" alt="Modern Suburban Home" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                            <div class="p-6">
+                                <h3 class="font-bold text-xl mb-2 text-charcoal">Modern Suburban Home</h3>
+                                <p class="text-gray-600">Durbanville</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-xl overflow-hidden group">
+                            <!-- IMAGE PLACEHOLDER: Replace with a project image. -->
+                            <img src="images/3.jpg" alt="Retail Fit-Out" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                            <div class="p-6">
+                                <h3 class="font-bold text-xl mb-2 text-charcoal">Retail Fit-Out</h3>
+                                <p class="text-gray-600">Cape Town CBD</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-xl overflow-hidden group">
+                           <!-- IMAGE PLACEHOLDER: Replace with a project image. -->
+                           <img src="images/4.jpg" alt="Patio Renovation" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                           <div class="p-6">
+                               <h3 class="font-bold text-xl mb-2 text-charcoal">Patio & Paving</h3>
+                               <p class="text-gray-600">Constantia</p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- CTA Banner -->
+            <section class="bg-charcoal text-white">
+                <div class="container mx-auto px-6 py-16 text-center">
+                    <h2 class="text-3xl font-bold mb-4">Looking to start your next project?</h2>
+                    <p class="text-off-white mb-8">Let's build something amazing together. Contact us today!</p>
+                    <a href="#contact" class="bg-terracotta text-white font-bold py-3 px-8 rounded-lg text-lg hover:opacity-90 transition duration-300 shadow-xl transform hover:scale-105">
+                        Request a Callback
+                    </a>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- =========== SERVICES PAGE SECTION =========== -->
+        <section id="services" class="py-20 bg-off-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <!-- IMAGE PLACEHOLDER: Replace with a photo of workers with tools. -->
+                    <img src="images/hero-2.png" class="w-full h-64 object-cover rounded-lg shadow-lg mb-8" alt="Workers on site">
+                    <h2 class="text-4xl font-extrabold text-charcoal mb-4">Our Services</h2>
+                    <p class="max-w-3xl mx-auto text-gray-600 leading-relaxed">
+                        At EvansBuilders, we provide an extensive range of services tailored for both homeowners and commercial clients. Whether you're building from the ground up or simply refreshing your space, our experienced team ensures durable, beautiful, and safe results.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-bold text-terracotta mb-3">Brick Work</h3>
+                        <p class="text-gray-600">Precision bricklaying for structural and decorative purposes, from foundations to boundary walls.</p>
+                    </div>
+                    <!-- Service Card -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-bold text-terracotta mb-3">Tiling</h3>
+                        <p class="text-gray-600">Expert floor and wall tiling that blends aesthetics and durability for kitchens, bathrooms, and more.</p>
+                    </div>
+                    <!-- Service Card -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-bold text-terracotta mb-3">Paving</h3>
+                        <p class="text-gray-600">Driveways, patios, walkways installed with quality materials and exacting standards.</p>
+                    </div>
+                    <!-- Service Card -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-bold text-terracotta mb-3">Painting</h3>
+                        <p class="text-gray-600">Interior and exterior painting with smooth finishes and long-lasting protection.</p>
+                    </div>
+                    <!-- Service Card -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-bold text-terracotta mb-3">Skimming & Plastering</h3>
+                        <p class="text-gray-600">For perfectly smooth surfaces ready for painting or wallpaper.</p>
+                    </div>
+                     <!-- Service Card -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-bold text-terracotta mb-3">Home & Commercial</h3>
+                        <p class="text-gray-600">From drawing board to completion, we bring visions to life with structural integrity and style.</p>
+                    </div>
+                     <!-- Service Card -->
+                     <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 md:col-span-2 lg:col-span-1">
+                        <h3 class="text-2xl font-bold text-terracotta mb-3">Renovations</h3>
+                        <p class="text-gray-600">Modern upgrades and careful restorations that retain your building's essence while improving functionality.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== ABOUT US PAGE SECTION =========== -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <!-- IMAGE PLACEHOLDER: Replace with a photo of your staff or tools. -->
+                <div class="relative rounded-lg shadow-xl overflow-hidden mb-16 h-80 bg-cover bg-center" style="background-image: url(images/6.jpeg)">
+                    <div class="absolute inset-0 bg-black opacity-40"></div>
+                     <div class="relative h-full flex flex-col justify-center items-center text-center text-white p-6">
+                        <h2 class="text-4xl font-extrabold mb-4">About EvansBuilders</h2>
+                        <p class="text-xl max-w-4xl">A trusted partner in transforming spaces across Cape Town.</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-16 items-center mb-16">
+                    <div>
+                        <h3 class="text-3xl font-bold text-charcoal mb-4">Our Company</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            EvansBuilders is more than a construction company — we are a trusted partner in transforming spaces. Based in Cape Town, we bring over a decade of experience, skilled labor, and integrity to every project. We've built our reputation on delivering results that stand the test of time, guided by values of safety, reliability, and excellence.
+                        </p>
+                    </div>
+                     <div>
+                        <h3 class="text-2xl font-bold text-charcoal mb-4">Mission Statement</h3>
+                        <p class="text-gray-600 italic border-l-4 border-terracotta pl-4">"To design, build, and repair structures that serve people and communities with integrity and professionalism."</p>
+                        <h3 class="text-2xl font-bold text-charcoal mt-6 mb-4">Vision Statement</h3>
+                        <p class="text-gray-600 italic border-l-4 border-terracotta pl-4">"To be Cape Town's most reliable and innovative construction partner, delivering world-class workmanship with a personal touch."</p>
+                    </div>
+                </div>
+
+                <!-- Testimonials Section -->
+                <div class="bg-off-white rounded-lg p-12">
+                     <h3 class="text-3xl font-bold text-center text-charcoal mb-10">What Our Clients Say</h3>
+                     <div class="grid md:grid-cols-2 gap-8">
+                         <div class="bg-white p-6 rounded-lg shadow-md">
+                             <p class="text-gray-600 italic mb-4">"EvansBuilders turned my vision into reality. Truly exceptional service and quality!"</p>
+                             <p class="font-bold text-charcoal text-right">- J. Doe, Homeowner</p>
+                         </div>
+                         <div class="bg-white p-6 rounded-lg shadow-md">
+                             <p class="text-gray-600 italic mb-4">"On time, within budget, and exactly as promised — a rare gem in construction."</p>
+                             <p class="font-bold text-charcoal text-right">- A. Smith, Business Owner</p>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========== CONTACT US PAGE SECTION =========== -->
+        <section id="contact" class="py-20 bg-off-white">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold text-charcoal">Get in Touch</h2>
+                    <p class="text-gray-600 mt-2">We're here to help you start your next project.</p>
+                </div>
+                
+                <div class="bg-white p-8 md:p-12 rounded-2xl shadow-2xl max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+                    <!-- Contact Form -->
+                    <form action="#" method="POST">
+                        <div class="mb-5">
+                            <label for="name" class="block mb-2 font-medium text-charcoal">Name</label>
+                            <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-terracotta focus:border-terracotta" required>
+                        </div>
+                         <div class="mb-5">
+                            <label for="phone" class="block mb-2 font-medium text-charcoal">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-terracotta focus:border-terracotta" required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="email" class="block mb-2 font-medium text-charcoal">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-terracotta focus:border-terracotta" required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="message" class="block mb-2 font-medium text-charcoal">Project Description / Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-terracotta focus:border-terracotta" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-terracotta text-white font-bold py-3 px-6 rounded-lg hover:opacity-90 transition duration-300 shadow-lg">
+                            Submit
+                        </button>
+                    </form>
+                    
+                    <!-- Contact Info & Map -->
+                    <div class="space-y-8">
+                         <div>
+                            <h3 class="text-2xl font-bold text-charcoal mb-4">Contact Information</h3>
+                             <p class="flex items-center text-gray-700 mb-3"><i data-feather="phone" class="w-5 h-5 mr-3 text-terracotta"></i> 079 454 9780</p>
+                             <p class="flex items-center text-gray-700 mb-3"><i data-feather="mail" class="w-5 h-5 mr-3 text-terracotta"></i> evansgarwi08@gmail.com</p>
+                             <p class="flex items-center text-gray-700 mb-3"><i data-feather="map-pin" class="w-5 h-5 mr-3 text-terracotta"></i> Operating Across Cape Town</p>
+                              <p class="flex items-center text-gray-700"><i data-feather="clock" class="w-5 h-5 mr-3 text-terracotta"></i> Mon - Sat, 8am - 5pm</p>
+                         </div>
+                         <div>
+                            <h3 class="text-2xl font-bold text-charcoal mb-4">Our Location</h3>
+                             <!-- GOOGLE MAPS EMBED PLACEHOLDER -->
+                             <!-- Replace this div with your Google Maps embed code -->
+                            <div class="w-full h-64 bg-gray-300 rounded-lg flex items-center justify-center text-gray-500">
+                                Google Map Placeholder (Cape Town)
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =========== FOOTER =========== -->
+    <footer class="bg-charcoal text-off-white">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <!-- Left Column -->
+                <div>
+                    <!-- LOGO PLACEHOLDER -->
+                    <!-- REPLACE THIS SRC: Replace the placeholder URL with your actual logo image file -->
+                    <img src="https://placehold.co/180x50/3D405B/FFFFFF?text=EvansBuilders" alt="EvansBuilders Logo" class="h-10 mb-2 mx-auto md:mx-0">
+                    <p class="text-gray-400">Design. Build. Repair. With EvansBuilders.</p>
+                </div>
+
+                <!-- Middle Column -->
+                <div class="flex flex-col space-y-2">
+                    <h4 class="font-bold text-lg mb-2">Quick Links</h4>
+                    <a href="#home" class="text-gray-400 hover:text-white transition">Home</a>
+                    <a href="#services" class="text-gray-400 hover:text-white transition">Services</a>
+                    <a href="#about" class="text-gray-400 hover:text-white transition">About</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                </div>
+
+                <!-- Right Column -->
+                 <div>
+                    <h4 class="font-bold text-lg mb-2">Contact Us</h4>
+                    <p class="text-gray-400">079 454 9780</p>
+                    <p class="text-gray-400">evansgarwi08@gmail.com</p>
+                    <div class="flex justify-center md:justify-start space-x-4 mt-4">
+                        <!-- Add links to your social media profiles -->
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="linkedin"></i></a>
+                    </div>
+                 </div>
+            </div>
+            <div class="text-center text-gray-500 border-t border-gray-700 mt-8 pt-6">
+                <p>&copy; 2025 EvansBuilders. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+        
+        // Initialize Feather Icons
+        feather.replace();
+    </script>
+</body>
+</html>
